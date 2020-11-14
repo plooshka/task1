@@ -18,7 +18,7 @@ public class Application {
         cars.add(new PremiumCarTaxi("Lexus", 74650, 18, 190));
 
         System.out.println(taxiPoolManager.calculateTotalCost(cars));
-        System.out.println(taxiPoolManager.sortByConsumption(cars).toString()git);
+        System.out.println(taxiPoolManager.sortByConsumption(cars).toString());
         System.out.println(taxiPoolManager.findTaxiBySpeed(200, 160, cars).toString());
     }
 }
