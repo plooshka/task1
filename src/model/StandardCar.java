@@ -1,7 +1,7 @@
-package entity;
+package model;
 
-public class StandardCarTaxi extends Car {
-    public StandardCarTaxi(String carBrand, int price, double fuelConsumptionPer100km, int maxSpeed) {
+public class StandardCar extends AbstractCar {
+    public StandardCar(String carBrand, int price, double fuelConsumptionPer100km, int maxSpeed) {
         super(carBrand, price, fuelConsumptionPer100km, maxSpeed);
     }
 

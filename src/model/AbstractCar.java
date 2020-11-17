@@ -1,14 +1,12 @@
-package entity;
+package model;
 
-import car_action.CarActions;
-
-public abstract class Car implements CarActions, Comparable<Car> {
+public abstract class AbstractCar implements car_action.Car, Comparable<AbstractCar> {
     private String carBrand;
     private int cost;
     private double fuelConsumptionPer100km;
     private int maxSpeed;
 
-    public Car(String carBrand, int cost, double fuelConsumptionPer100km, int maxSpeed){
+    public AbstractCar(String carBrand, int cost, double fuelConsumptionPer100km, int maxSpeed){
         this.carBrand = carBrand;
         this.cost = cost;
         this.fuelConsumptionPer100km = fuelConsumptionPer100km;
@@ -58,7 +56,7 @@ public abstract class Car implements CarActions, Comparable<Car> {
     }
 
     @Override
-    public int compareTo(Car o) {
+    public int compareTo(AbstractCar o) {
         double compareConsumption = o.fuelConsumptionPer100km;
         return (int) (this.fuelConsumptionPer100km - compareConsumption);
     }
